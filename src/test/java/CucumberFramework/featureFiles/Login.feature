@@ -3,8 +3,8 @@ Feature: Login into account
 
   Scenario: Login into account with correct credentials
     Given User navigates to stackoverflow website
-    And User clicks on the login button
-    And User enters a correct username
-    And User enters a correct password
-    When User clicks on the login button
+    Given User clicks on the login button
+    Given User enters a correct username
+    Given User enters a correct password
+    When User clicks on the login buttonx
     Then User should be taken to the successful login page
